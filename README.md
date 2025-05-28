@@ -1,1 +1,1 @@
-# mentorship-app
+# RAG-based-Search-app

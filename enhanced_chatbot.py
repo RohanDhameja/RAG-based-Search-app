@@ -53,7 +53,7 @@ class Chatbot:
         elif provider == "groq":
             from langchain_groq import ChatGroq
             os.environ["GROQ_API_KEY"] = os.environ.get("GROQ_API_KEY", "") # Ensure you set this key
-            self.llm = ChatGroq(model=self.config.MODEL_GROQ, temperature=0.3, api_key="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")
+            self.llm = ChatGroq(model=self.config.MODEL_GROQ, temperature=0.3, api_key="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")
         elif provider == "openai":
             from langchain_openai import ChatOpenAI
             os.environ["OPENAI_API_KEY"] = os.environ.get("OPENAI_API_KEY", "")

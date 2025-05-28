@@ -1,0 +1,33 @@
+# === Complete Requirements for the AI Document Chatbot ===
+# This file contains all Python packages for the chatbot, including PDF, DOCX, and OCR support.
+# For a new setup, first install system dependencies (Poppler, Tesseract),
+# then use this file in a clean Conda environment via:
+# pip install -r requirements.txt
+
+# --- Core LangChain Framework ---
+langchain
+langchain-community
+langchain-core
+langchain-huggingface
+langsmith
+
+# --- Vector Store & Embeddings ---
+faiss-cpu
+sentence-transformers
+
+# --- Document Parsing & OCR ---
+unstructured[all]
+# Pinned to a specific version to prevent a known 'PSSyntaxError' conflict.
+pdfminer.six==20221105
+# Python wrapper for the Tesseract OCR engine.
+pytesseract
+# Dependency for handling certain image types within PDFs.
+pillow-heif
+# Direct loader for Microsoft Word .docx files.
+docx2txt
+
+# --- LLM Provider Libraries ---
+# The script will use one of these based on your config.
+ollama
+langchain-groq
+langchain-openai
